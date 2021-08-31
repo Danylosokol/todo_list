@@ -1,0 +1,89 @@
+* {
+    font-family: 'Klee One', cursive;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background-color: white;
+}
+
+body::before {
+    background-image: url(https://stepik.org/media/attachments/lesson/374893/world.png);
+    background-size: cover;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.25;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 0 auto 0 auto;
+    padding-left: 29vw;
+    position: relative;
+}
+
+h1{
+    margin-top: 0;
+    padding-top: 0.5em;
+}
+
+.container {
+    align-content: space-around;
+    display: flex;
+    flex-flow: wrap;
+    font-size: 1.2em;
+    font-weight: 400;
+    height: 42vw;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 2000px;
+    position: relative;
+    width: 42vw;
+}
+
+.card {
+    height: 30%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s ease .25s;
+    width: 30%;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.front{
+    background-color: sandybrown;
+    z-index: 2;
+}
+
+.back{
+    background-color: darkgrey;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
