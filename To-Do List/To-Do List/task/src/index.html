@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h1><span class="first-letter">To-Do</span> List</h1>
+    </div>
+    <div class="input">
+        <label for="input-task"></label>
+        <input id="input-task" type="text"><button id="add-task-button">ADD TASK</button>
+    </div>
+    <div class="tasks">
+        <div>
+            <ul id="task-list">
+                <li>
+                    <label class="checkbox"><input type="checkbox"><span class="task">Email David</span></label><button class="delete-btn"></button>
+                </li>
+                <li>
+                    <label class="checkbox"><input type="checkbox"><span class="task">Create ideal user persona guide</span></label><button class="delete-btn"></button>
+                </li>
+                <li>
+                    <label class="checkbox"><input type="checkbox"><span class="task">Set up A/B test</span></label><button class="delete-btn"></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
